@@ -240,6 +240,8 @@ export function useProjects() {
   const { data, isLoading, isError, error, refetch } = useQuery({
     queryKey: ["projects"],
     queryFn: fetchProjects,
+    staleTime: 5 * 60 * 1000, // Cache for 5 minutes
+    refetchOnWindowFocus: false, // Avoid unnecessary refetching
   })
 
   // Mutation for creating a project
@@ -307,6 +309,7 @@ export function useProject(id: string) {
     queryKey: ["project", id],
     queryFn: () => fetchProjectById(id),
     enabled: !!id, // Only run the query if an ID is provided
+    staleTime: 10 * 60 * 1000
   })
 
   return {

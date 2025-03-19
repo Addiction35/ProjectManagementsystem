@@ -118,7 +118,7 @@ export async function GET(request: NextRequest, { params }: { params: { id: stri
         </div>
         
         <div class="footer">
-          <p>BuildPro Construction Management | 456 Business Ave, Metropolis, NY 10001 | (555) 123-4567 | info@buildpro.com</p>
+          <p>BuildPro Construction Management | 456 Business Ave, Mombasa, Kenya 10001 | (254) 123-4567 | info@buildpro.com</p>
         </div>
       </body>
     </html>`,
