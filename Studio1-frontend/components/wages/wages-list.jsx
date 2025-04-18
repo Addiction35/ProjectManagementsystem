@@ -174,11 +174,17 @@ export function WagesList() {
         <TableHeader>
           <TableRow>
             <TableHead>ID</TableHead>
-            <TableHead>Employee</TableHead>
-            <TableHead>Department</TableHead>
-            <TableHead>Pay Period</TableHead>
+            <TableHead>Date</TableHead>
+            <TableHead>Project</TableHead>
+            <TableHead>Wage Number</TableHead>
+            <TableHead>Referance</TableHead>
+            <TableHead>referance</TableHead>
             <TableHead>Amount</TableHead>
+            <TableHead>Vendor Name</TableHead>
             <TableHead>Status</TableHead>
+            <TableHead>Billed</TableHead>
+            <TableHead>Delivery Date</TableHead>
+            <TableHead>Company</TableHead>
             <TableHead className="text-right">Actions</TableHead>
           </TableRow>
         </TableHeader>
