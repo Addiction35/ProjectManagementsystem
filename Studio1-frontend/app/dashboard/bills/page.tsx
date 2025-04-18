@@ -1,25 +1,25 @@
 import { DashboardHeader } from "@/components/dashboard-header"
 import { DashboardShell } from "@/components/dashboard-shell"
-import { ExpensesList } from "@/components/expenses/expenses-list"
-import { ExpensesFilters } from "@/components/expenses/expenses-filters"
+import { BillsList } from "@/components/bills/bills-list"
+import { BillsFilters } from "@/components/bills/bills-filters"
 import { Button } from "@/components/ui/button"
 import { Plus } from "lucide-react"
 import Link from "next/link"
 
-export default function ExpensesPage() {
+export default function BillsPage() {
   return (
     <DashboardShell>
-      <DashboardHeader heading="Expenses" text="Manage your business expenses.">
+      <DashboardHeader heading="Bills" text="Manage your bills and payments.">
         <Button asChild>
-          <Link href="/dashboard/expenses/new">
+          <Link href="/dashboard/bills/new">
             <Plus className="mr-2 h-4 w-4" />
-            New Expense
+            New Bill
           </Link>
         </Button>
       </DashboardHeader>
       <div className="space-y-4">
-        <ExpensesFilters />
-        <ExpensesList />
+        <BillsFilters />
+        <BillsList />
       </div>
     </DashboardShell>
   )

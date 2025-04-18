@@ -30,6 +30,11 @@ const items = [
     icon: Building,
   },
   {
+    title: "Budget",
+    href: "/dashboard/budget",
+    icon: Receipt,
+  },
+  {
     title: "Estimates",
     href: "/dashboard/estimates",
     icon: FileText,
@@ -55,13 +60,23 @@ const items = [
     icon: Users,
   },
   {
-    title: "Wages & Payroll",
+    title: "Payroll",
+    href: "/dashboard/payroll",
+    icon: DollarSign,
+  },
+  {
+    title: "Wages",
     href: "/dashboard/wages",
     icon: DollarSign,
   },
   {
     title: "Expenses",
     href: "/dashboard/expenses",
+    icon: Receipt,
+  },
+  {
+    title: "Bills",
+    href: "/dashboard/bills",
     icon: Receipt,
   },
   {
